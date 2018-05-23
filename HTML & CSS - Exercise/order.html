@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/form.css">
+    <title></title>
+</head>
+<body>
+    <nav class="topnav">
+        <div>
+            <a class="logo" href="index.html"><img src="images/logo.png"/></a>
+            <a href="index.html">Home</a>
+            <a href="all-beers.html">See All Beers</a>
+            <a class="active" href="order.html">Order a Beer</a>
+            <a class="right" href="register.html">Register</a>
+            <a class="right" href="login.html">Log in</a>
+        </div>
+    </nav>
+
+    <main>
+        <center>
+            <h1>Login</h1>
+            <br/>
+            <form>
+                <label for="brand">Brand</label>
+                <select name="brand">
+                    <option selected disabled>Select a brand</option>
+                    <option value="1">Corona Extra 330ml</option>
+                    <option value="2">Stella Artois 500ml</option>
+                    <option value="3">Carlsberg 500ml</option>
+                    <option value="4">Heineken 500ml</option>
+                    <option value="5">Burgasko 500ml</option>
+                </select>
+                
+                <label for="quantity">Quantity</label>
+                <input placeholder="Enter amount of beers (1-15)" name="quantity" type="number" min="1" max="15">
+                
+                <label for="city">City</label>
+                <select name="city">
+                    <option selected disabled>Select a city</option>
+                    <option value="1">Hissarq</option>
+                    <option value="2">Sofiq</option>
+                    <option value="3">Plovdiv</option>
+                    <option value="4">Burgas</option>
+                    <option value="5">Ruse</option>
+                </select>
+
+                <label for="address">Address</label>
+                <input placeholder="Address" name="address" type="text">
+
+                <label for="birthdate">Enter your birthdate</label>
+                <input name="birthdate" type="date">
+
+                <label for="opinion">Gor an opinion, comment, recommendation? Share it with us!</label>
+                <input placeholder="Share your opinion with us!" name="opinion" type="text">
+                <input type="submit" name="order" value="Order">
+            </form>
+        </center>
+    </main>
+
+    <footer>
+        <hr/>
+        <p><em>&copy; 2018 &ndash; SoftUni Beers</em></p>
+    </footer>
+</body>
+</html>

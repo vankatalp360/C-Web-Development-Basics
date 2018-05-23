@@ -1,0 +1,23 @@
+﻿p{
+    background-color: #D3D3D3;
+    border-radius: 8px;
+    text-align: center
+}
+#red {
+    border: solid 3px red;
+}
+#red > span {
+    color: red;
+}
+#green {
+    border: solid 3px green;
+}
+#green > span {
+    color: green;
+}
+#blue {
+    border: solid 3px blue;
+}
+#blue > span {
+    color: blue;
+}
