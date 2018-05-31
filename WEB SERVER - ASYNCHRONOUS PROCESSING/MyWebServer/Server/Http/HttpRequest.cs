@@ -11,11 +11,13 @@ namespace MyWebServer.Server.HTTP
 {
     public class HttpRequest : IHttpRequest
     {
+        private string requestString;
        
         public HttpRequest(string requestString)
         {
             CoreValidator.ThrowIfNullOrEmpty(requestString, nameof(requestString));
 
+            this.requestString = requestString;
             this.ForumData = new Dictionary<string, string>();
             this.Headers = new HttpHeaderCollection();
             this.QueryParameters = new Dictionary<string, string>();
@@ -157,6 +159,11 @@ namespace MyWebServer.Server.HTTP
             }
 
             this.ParseQuery(formDataLine, this.ForumData);
+        }
+
+        public override string ToString()
+        {
+            return this.requestString;
         }
     }
 }
